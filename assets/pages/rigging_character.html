@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prisma Guide - Rigging de Personajes</title>
+  <link rel="stylesheet" href="/assets/styles/tutorial.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Rigging de Personajes en Prisma 3D</h1>
+
+    <div class="content">
+      <h2>Introducción al Rigging de Personajes</h2>
+      <p>El rigging de personajes permite crear estructuras de huesos dentro de un modelo para animar sus movimientos. En Prisma 3D, el rigging se centra en crear un esqueleto básico que pueda ser manipulado para hacer caminar, correr, o realizar movimientos específicos.</p>
+
+      <h3>1. Preparación del Modelo de Personaje</h3>
+      <p>Antes de empezar el rigging, asegúrate de que tu modelo de personaje esté segmentado en partes que correspondan a las articulaciones principales, como cabeza, torso, brazos y piernas. Esto facilita la asignación de huesos para cada parte del cuerpo.</p>
+
+      <h3>2. Añadir Huesos al Personaje</h3>
+      <ol>
+        <li><strong>Crear el hueso principal (raíz):</strong> Este hueso debe estar ubicado en la parte inferior del personaje, como la cadera, y actuará como punto de control principal para todo el cuerpo.</li>
+        <li><strong>Añadir huesos secundarios:</strong> Añade huesos en la columna, brazos, piernas y cabeza. En Prisma 3D, estos huesos permitirán que cada parte del personaje se mueva de manera independiente.</li>
+        <li><strong>Conectar los huesos:</strong> Asegúrate de que cada hueso esté conectado correctamente para que el movimiento fluya entre las articulaciones. La conexión típica sería: Raíz → Columna → Hombros → Brazos / Piernas → Cabeza.</li>
+      </ol>
+
+      <h3>3. Configuración de las Articulaciones</h3>
+      <p>Para permitir movimientos naturales en el personaje, ajusta cada hueso en la posición adecuada. Algunos ejemplos incluyen:</p>
+      <ul>
+        <li>Los brazos y las piernas deben estar alineados para que puedan doblarse en las articulaciones correctas (codos y rodillas).</li>
+        <li>La columna debe permitir una ligera inclinación para que el personaje pueda girarse o inclinarse.</li>
+      </ul>
+
+      <h3>4. Configuración de Keyframes para el Movimiento</h3>
+      <p>Con el rigging listo, puedes comenzar a animar el personaje configurando keyframes. Algunos movimientos comunes incluyen:</p>
+      <ul>
+        <li><strong>Caminar:</strong> Añade keyframes en las piernas para simular un paso, moviendo la pierna hacia adelante y luego hacia atrás en cada fotograma clave.</li>
+        <li><strong>Correr:</strong> Similar al caminar, pero con mayor inclinación del torso y movimientos más rápidos de piernas y brazos.</li>
+        <li><strong>Saltar:</strong> Añade un keyframe de subida y bajada en la raíz para simular el movimiento de salto.</li>
+      </ul>
+
+      <h3>5. Prueba y Ajustes de Movimiento</h3>
+      <p>Usa la vista previa en Prisma 3D para revisar cómo se ven los movimientos de tu personaje y ajusta la posición y el tiempo de los keyframes si es necesario. Los movimientos deben ser suaves y naturales.</p>
+
+      <h3>6. Consejos para un Rigging Eficiente</h3>
+      <ul>
+        <li>Configura los límites de rotación en cada hueso para evitar que se doblen en ángulos poco naturales.</li>
+        <li>Haz pruebas constantes y ajusta los keyframes para mantener una animación fluida y natural.</li>
+        <li>Guarda los avances a menudo y experimenta con movimientos sutiles para dar más vida a tu personaje.</li>
+      </ul>
+
+      <h3>7. Exportación y Uso del Personaje Animado</h3>
+      <p>Una vez que el rigging y la animación están completos, exporta el personaje. Asegúrate de elegir el formato adecuado si planeas utilizar el personaje en otros proyectos o software.</p>
+
+      <div class="navigation">
+        <a href="/index.html">Volver al Inicio</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

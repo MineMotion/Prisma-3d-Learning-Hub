@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prisma Guide - Rigging IK</title>
+  <link rel="stylesheet" href="/assets/styles/tutorial.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Rigging IK en Prisma 3D</h1>
+
+    <div class="content">
+      <h2>¿Qué es el Rigging IK en Prisma 3D?</h2>
+      <p>El rigging IK (cinemática inversa) en Prisma 3D permite animar de forma más natural cadenas de huesos, como brazos o piernas. Con esta función, al mover el hueso de un extremo (por ejemplo, la muñeca), Prisma ajusta automáticamente el resto de los huesos para que el movimiento fluya de manera realista.</p>
+
+      <h3>Ventajas del Rigging IK</h3>
+      <p>Usar IK permite simplificar la animación en varias situaciones, ya que reduce la necesidad de ajustar manualmente cada hueso de la cadena. Es especialmente útil para movimientos de personajes como caminar o extender el brazo hacia un objeto.</p>
+
+      <h3>Cómo Configurar IK en Prisma 3D</h3>
+      <ol>
+        <li><strong>Preparar el Esqueleto:</strong> Crea un esqueleto básico para tu personaje, organizando huesos en cadenas lógicas como el brazo o la pierna. Asegúrate de que los huesos estén bien conectados.</li>
+        <li><strong>Activar IK en el Hueso Final:</strong> Selecciona el hueso en el que deseas aplicar IK, como la muñeca o el tobillo, y activa la opción de IK en el panel de propiedades de Prisma 3D.</li>
+        <li><strong>Configurar los Límites de Movimiento:</strong> En Prisma 3D, puedes establecer límites de rotación para que los huesos se muevan de forma natural. Esto ayuda a que el personaje no tenga movimientos poco realistas.</li>
+        <li><strong>Usar el Controlador de IK:</strong> Una vez activado el IK, mueve el hueso del extremo (como la muñeca o el pie) para observar cómo el resto de la cadena de huesos se ajusta automáticamente, siguiendo el movimiento del controlador.</li>
+      </ol>
+
+      <h3>Ejemplo de Rigging IK para un Brazo</h3>
+      <p>Para entender mejor cómo funciona, aquí tienes un ejemplo práctico:</p>
+      <ul>
+        <li>1. Crea un brazo con huesos en el hombro, codo y muñeca.</li>
+        <li>2. Selecciona el hueso de la muñeca y activa IK.</li>
+        <li>3. Mueve el hueso de la muñeca hacia una nueva posición. Observa cómo Prisma 3D ajusta el hombro y el codo para lograr un movimiento fluido.</li>
+      </ul>
+
+      <h3>Consejos para Mejorar tus Animaciones con IK</h3>
+      <ul>
+        <li>Aplica límites de rotación para evitar movimientos antinaturales.</li>
+        <li>Combina IK y FK cuando sea necesario: FK sigue siendo útil para movimientos detallados o control específico de un hueso individual.</li>
+        <li>Experimenta con la velocidad y el rango de movimiento para que la animación sea más realista.</li>
+      </ul>
+
+      <h3>Visualización y Ajuste Final</h3>
+      <p>Utiliza la vista previa en Prisma 3D para ver tu animación completa y asegúrate de que los movimientos se ven naturales. Ajusta los keyframes o límites de movimiento si es necesario.</p>
+
+      <div class="navigation">
+        <a href="/index.html">Volver al Inicio</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

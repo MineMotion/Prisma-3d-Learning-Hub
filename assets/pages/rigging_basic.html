@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prisma Guide - Rigging Básico</title>
+  <link rel="stylesheet" href="/assets/styles/tutorial.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Rigging Básico</h1>
+
+    <div class="content">
+      <h2>Introducción al Rigging en Prisma 3D</h2>
+      <p>El rigging es el proceso de crear un esqueleto (o "rig") para un modelo 3D, lo que permite manipularlo para la animación. En Prisma 3D, el rigging tiene limitaciones, pero es suficiente para crear rigs básicos para personajes o partes móviles. Este tutorial te guiará en los conceptos y pasos esenciales para comenzar con el rigging en Prisma 3D.</p>
+
+      <h3>1. Preparación del Modelo</h3>
+      <p>Antes de comenzar con el rigging, asegúrate de que tu modelo esté organizado y limpio. En Prisma 3D, es esencial que las partes móviles estén separadas en diferentes objetos. Si estás trabajando con un personaje, asegúrate de dividir brazos, piernas y cuerpo en piezas distintas para facilitar el rigging.</p>
+
+      <h3>2. Creación de Huesos Básicos</h3>
+      <p>En Prisma 3D, puedes simular un esqueleto básico asignando objetos en forma de "huesos" para controlar el movimiento de otras partes. Selecciona la opción de añadir un objeto cilíndrico o fino que representará tu "hueso". Alinea este objeto en la posición deseada, como el brazo o pierna del personaje, para que sirva de controlador de movimiento.</p>
+
+      <h3>3. Estructura del Esqueleto</h3>
+      <p>Para un rig básico, crea huesos para las siguientes áreas:
+        <ul>
+          <li>Torso (centro del personaje)</li>
+          <li>Brazos y piernas</li>
+          <li>Cabeza</li>
+        </ul>
+        Asegúrate de colocar cada hueso en el lugar adecuado y asignarlo como "padre" de las piezas correspondientes. Esto permitirá que, al mover un hueso, la parte del modelo unida a él también se mueva.</p>
+
+      <h3>4. Asignación de Padres e Hijos</h3>
+      <p>Para que el esqueleto funcione correctamente, debes establecer relaciones de "parenting" entre los huesos y las partes del modelo. En Prisma 3D, selecciona la parte del modelo (por ejemplo, el brazo) y establece el hueso correspondiente como su "padre". Esto permite que, al mover el hueso, el brazo lo siga automáticamente.</p>
+
+      <h3>5. Prueba de Movimiento</h3>
+      <p>Una vez configurado el rig, prueba mover los huesos para asegurarte de que las partes del modelo se comportan correctamente. Realiza rotaciones o movimientos de prueba en los huesos principales, como el torso y las extremidades, para verificar que el personaje responde bien.</p>
+
+      <h3>6. Limitaciones y Consejos en Prisma 3D</h3>
+      <p>Prisma 3D tiene ciertas limitaciones en rigging que debes tener en cuenta:
+        <ul>
+          <li>No soporta sistemas avanzados como IK (cinemática inversa) o deformaciones complejas.</li>
+          <li>El rigging es adecuado para estructuras simples y personajes básicos.</li>
+          <li>Si necesitas más precisión, ajusta manualmente cada parte del modelo en lugar de depender de huesos complejos.</li>
+        </ul>
+        Estas limitaciones significan que, para movimientos detallados, como dedos o expresiones faciales, necesitarás un software más avanzado.</p>
+
+      <h3>7. Ejemplo Básico de Rigging</h3>
+      <p>Prueba crear un rig simple para un personaje básico. Añade huesos para las piernas y brazos y asigna la estructura del esqueleto tal como se describe arriba. Con el rigging básico, podrás mover el personaje en posiciones simples, como caminar o levantar los brazos, lo que puede ser suficiente para animaciones menos complejas.</p>
+
+      <h3>Consejos Adicionales</h3>
+      <p>El rigging en Prisma 3D mejora con la práctica. Experimenta con distintos tipos de huesos y configuraciones para obtener una sensación de lo que puedes lograr con las herramientas disponibles. A medida que adquieras experiencia, podrás maximizar el potencial de Prisma 3D en rigging.</p>
+
+      <div class="navigation">
+        <a href="/index.html">Volver al Inicio</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
