@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prisma Guide - Controladores en Rigging</title>
+  <link rel="stylesheet" href="/assets/styles/tutorial.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Controladores en Rigging</h1>
+
+    <div class="content">
+      <h2>Guía de Controladores para Rigging en Prisma 3D</h2>
+      <p>Los controladores en rigging permiten a los animadores manipular los movimientos de un personaje o estructura sin necesidad de ajustar cada hueso de forma individual. Esto facilita la creación de animaciones precisas y rápidas.</p>
+
+      <h3>¿Qué son los Controladores?</h3>
+      <p>Los controladores son "manijas" o herramientas que asignamos a partes clave del rig, lo que permite al animador controlar el movimiento de un personaje o objeto a través de un punto de acceso. En lugar de mover los huesos directamente, se utilizan estos controladores para simplificar el proceso y reducir el riesgo de errores en el rigging.</p>
+
+      <h3>1. Creación de Controladores en Prisma 3D</h3>
+      <p>Para crear controladores en Prisma 3D, puedes utilizar formas simples como cubos, esferas o incluso líneas para representar los puntos de control. Estas formas serán los "manijas" visuales que el animador utilizará.</p>
+      <ul>
+        <li><strong>Pies y Manos:</strong> Crea un cubo o esfera que actúe como controlador de los pies y manos del personaje. Colócalo en la posición de la extremidad y vincúlalo al rig.</li>
+        <li><strong>Pelvis:</strong> Un controlador en la pelvis permite ajustar la posición general del personaje sin afectar el torso o las extremidades.</li>
+        <li><strong>Cabeza y Cuello:</strong> Añade un controlador sobre la cabeza o el cuello para facilitar el movimiento de la mirada y las expresiones del personaje.</li>
+      </ul>
+
+      <h3>2. Configuración de los Controladores</h3>
+      <p>Una vez creados los controladores, es necesario asignarlos correctamente a los huesos que deseas manipular. Esto se hace vinculando los controladores a los huesos específicos para permitir que el movimiento de estos objetos de control afecte al rig en su conjunto.</p>
+
+      <h3>3. Manipulación de Controladores</h3>
+      <p>Al animar, puedes mover los controladores en lugar de los huesos directamente, lo que permite una manipulación más simple y evita que la estructura del rig se deforme de forma indeseada. Prisma 3D permite mover, rotar y escalar los controladores para personalizar cada pose.</p>
+
+      <h3>4. Controladores para IK y FK</h3>
+      <p>Los controladores también se usan para alternar entre **cinemática directa** (FK) y **cinemática inversa** (IK) en el rigging. Esto es útil para crear movimientos realistas, como hacer que los pies se mantengan fijos en el suelo o que las manos sigan un objeto en movimiento.</p>
+
+      <h3>5. Visualización de la Animación</h3>
+      <p>Después de configurar los controladores, usa la vista previa para probar los movimientos y asegurarte de que los controladores funcionan correctamente. Ajusta según sea necesario para lograr la fluidez en los movimientos.</p>
+
+      <div class="navigation">
+        <a href="/index.html">Volver al Inicio</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
