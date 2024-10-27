@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prisma Guide - Cinemática Inversa (IK)</title>
+  <link rel="stylesheet" href="/assets/styles/tutorial.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cinemática Inversa (IK)</h1>
+
+    <div class="content">
+      <h2>Guía para Usar la Cinemática Inversa en Prisma 3D</h2>
+      <p>La cinemática inversa (IK) es una técnica de animación que permite mover una parte del cuerpo de un modelo 3D y que las otras partes se ajusten automáticamente. Esto facilita la creación de movimientos realistas y precisos en personajes y objetos.</p>
+
+      <h3>1. ¿Qué es la Cinemática Inversa?</h3>
+      <p>La cinemática inversa es un método que calcula las posiciones necesarias de los segmentos de un modelo en función de la posición deseada de un extremo, como una mano o un pie. Es especialmente útil para animar personajes que interactúan con su entorno.</p>
+
+      <h3>2. Configuración de un Rig con IK</h3>
+      <p>Para utilizar IK, primero debes tener un rig (esqueleto) que soporte esta funcionalidad. Asegúrate de que los huesos estén correctamente jerarquizados, comenzando por un hueso base que actuará como control principal.</p>
+
+      <h3>3. Aplicación de IK en Prisma 3D</h3>
+      <p>En Prisma 3D, puedes configurar IK siguiendo estos pasos:</p>
+      <ul>
+        <li><strong>Selecciona el Hueso Controlador:</strong> Elige el hueso que actuará como punto de control para la cinemática inversa.</li>
+        <li><strong>Configura el IK:</strong> Ve al menú de configuración de IK y define los huesos que estarán afectados por el controlador.</li>
+        <li><strong>Ajusta los Parámetros:</strong> Configura la longitud de los huesos y otros parámetros como el peso y la resistencia para lograr un movimiento realista.</li>
+      </ul>
+
+      <h3>4. Animando con IK</h3>
+      <p>Para animar utilizando IK:</p>
+      <ul>
+        <li><strong>Posiciona el Controlador:</strong> Mueve el hueso controlador a la posición deseada, y observa cómo los huesos hijos se ajustan automáticamente.</li>
+        <li><strong>Configura Keyframes:</strong> Añade keyframes en diferentes posiciones para crear una secuencia de movimiento fluida.</li>
+        <li><strong>Visualiza la Animación:</strong> Usa la vista previa para comprobar cómo se ve la animación en tiempo real.</li>
+      </ul>
+
+      <h3>5. Consejos para una Mejor Animación con IK</h3>
+      <ul>
+        <li>Asegúrate de que el rig esté bien diseñado para evitar movimientos poco naturales.</li>
+        <li>Combina IK con cinemática directa (FK) para transiciones más suaves y controladas.</li>
+        <li>Prueba diferentes configuraciones y ajustes para encontrar el mejor resultado para tu animación.</li>
+      </ul>
+
+      <h3>6. Ejemplo Práctico</h3>
+      <p>Intenta animar un personaje que está alcanzando un objeto en una mesa. Usa IK para mover la mano del personaje hacia el objeto, y observa cómo los brazos y las piernas se ajustan para mantener un movimiento natural.</p>
+
+      <h3>7. Recursos Adicionales</h3>
+      <p>Explora tutoriales y foros en línea para aprender más sobre técnicas avanzadas de IK. A menudo, las comunidades de animadores comparten trucos y consejos que pueden ayudarte a mejorar tus habilidades.</p>
+
+      <div class="navigation">
+        <a href="/index.html">Volver al Inicio</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

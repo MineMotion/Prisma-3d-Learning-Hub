@@ -1,0 +1,175 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alineación en la parte superior */
+  min-height: 10vh;
+}
+
+.container {
+  width: 95%; /* Aumentar el ancho del contenedor */
+  max-width: 1300px; /* Aumentar el ancho máximo */
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #007bff; /* Color azul para el título principal */
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #007bff; /* Color azul para los subtítulos */
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: 15px 0;
+  color: #333; /* Color oscuro para subtítulos de sección */
+}
+
+.content {
+  margin-bottom: 40px; /* Espacio entre el contenido */
+}
+
+/* Estilos de párrafos y listas */
+p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555; /* Color gris oscuro para texto */
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+/* Estilos para elementos de lista */
+li {
+  margin-bottom: 10px; /* Espaciado entre elementos de lista */
+}
+
+/* Estilos de navegación */
+.navigation {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.navigation a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.navigation a:hover {
+  background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+}
+
+/* Secciones y Estilos de Cuadrícula (no se aplican a esta página pero se mantienen para consistencia) */
+.section {
+  margin-bottom: 40px;
+}
+
+/* Estilos para listas de enlaces en la página principal */
+.links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.links li a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 10px;
+}
+
+/* Estilos para la cuadrícula (no se aplican a esta página pero se mantienen para consistencia) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.grid li a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f0f2f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid li a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.grid li img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-bottom: 2px solid #007bff;
+}
+
+.grid li span {
+  display: block;
+  padding: 8px;
+  font-size: 0.9em;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+/* Estilo adicional para mejorar el colorido */
+h2, h3 {
+  border-bottom: 2px solid #007bff; /* Subrayado en subtítulos */
+  padding-bottom: 5px;
+}
+
+.content {
+  background-color: #f9f9f9; /* Fondo gris claro para el contenido */
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para el contenido */
+}
+
+.video-container {
+    text-align: center; /* Centra el video */
+    margin: 20px 0; /* Espaciado arriba y abajo */
+}
+
+.video-container iframe {
+    width: 50%; /* Hacer que el iframe ocupe el 100% del ancho del contenedor */
+    height: auto; /* Mantener la relación de aspecto */
+    max-width: 640px; /* Ancho máximo si se desea */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}

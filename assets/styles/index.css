@@ -1,0 +1,106 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #444;
+  padding-left: 10px;
+  border-left: 4px solid #007bff;
+}
+
+.sub-section h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Estilos de la cuadrícula */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.grid li a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f0f2f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid li a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.grid li img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-bottom: 2px solid #007bff;
+}
+
+.grid li span {
+  display: block;
+  padding: 8px;
+  font-size: 0.9em;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+/* Estilos para la lista de enlaces */
+.links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.links li a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding:
